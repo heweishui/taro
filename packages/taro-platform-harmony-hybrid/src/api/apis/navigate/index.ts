@@ -1,7 +1,7 @@
 import Taro from '@tarojs/api'
-import { navigateTo as navigateToH5 } from '@tarojs/taro-h5'
-import native from '../NativeApi'
 import { navigateBack as navigateBackH5, navigateTo as navigateToH5 } from '@tarojs/taro-h5'
+
+import native from '../NativeApi'
 
 function getFromParameter (from: string|undefined): number {
   let number: number = -1
@@ -45,7 +45,8 @@ export function exitMiniProgram (option?: any) {
   native.exitMiniProgram(option)
 }
 
-* 关闭当前页面，返回上一页面或多级页面。
+/**
+ * 关闭当前页面，返回上一页面或多级页面。
  *
  * @canUse navigateBack
  * @__object [delta]
