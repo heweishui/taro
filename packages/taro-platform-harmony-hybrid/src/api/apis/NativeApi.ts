@@ -607,6 +607,11 @@ export class NativeApi {
   callInstanceAsync (option: any): any {
     return option
   }
+
+  @(asyncAndRelease)
+  exitMiniProgram (option?: any): any {
+    return option
+  }
 }
 
 export interface Status {
