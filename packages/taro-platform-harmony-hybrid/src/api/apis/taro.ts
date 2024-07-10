@@ -15,7 +15,6 @@ import {
   reLaunch,
   switchTab,
 } from './index'
-import native from "./NativeApi";
 
 const requirePlugin = () => {
   return {
@@ -97,18 +96,3 @@ export {
   pxTransform,
   requirePlugin
 }
-
-// 监听原生的Navigate方法
-native.onNativeNavigate({
-  nativeNavigateTo: (url: string)=>{
-    navigateTo({
-      url: url,
-      success: function ( ) {}
-    })
-  },
-  nativeNavigateBack: (delta: number) => {
-    navigateBack({
-      delta: delta
-    })
-  }
-})
