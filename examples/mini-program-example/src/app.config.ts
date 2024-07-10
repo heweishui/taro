@@ -148,7 +148,10 @@ export default defineAppConfig({
     'pages/api/thirdParty/index',
     'pages/api/worker/index',
     'pages/api/wxml/index',
-    'pages/performance/index/index'
+    'pages/performance/index/index',
+    'pages/harmony-hybrid/mix-router/home/index',
+    'pages/harmony-hybrid/mix-router/list/index',
+    'pages/harmony-hybrid/mix-router/detail/index'
   ],
   tabBar: {
     color: '#7A7E83',
