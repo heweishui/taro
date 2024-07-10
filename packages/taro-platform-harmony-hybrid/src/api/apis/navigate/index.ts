@@ -36,6 +36,16 @@ export function navigateTo (option: Taro.navigateTo.Option) {
 }
 
 /**
+ * 退出当前小程序。必须有点击行为才能调用成功。
+ *
+ * @canUse exitMiniProgram
+ * @__object [url, events]
+ */
+export function exitMiniProgram (option?: any) {
+  native.exitMiniProgram(option)
+}
+
+/**
  * 关闭当前页面，返回上一页面或多级页面。
  *
  * @canUse navigateBack
@@ -77,5 +87,4 @@ native.onNativeNavigate({
     })
   }
 })
-
 

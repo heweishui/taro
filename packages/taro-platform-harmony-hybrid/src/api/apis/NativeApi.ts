@@ -620,6 +620,11 @@ export class NativeApi {
     return option
   }
 
+  @(asyncAndRelease)
+  exitMiniProgram (option?: any): any {
+    return option
+  }
+
   @(asyncAndNotRelease)
   onNativeNavigate (_options: any): void {}
 
